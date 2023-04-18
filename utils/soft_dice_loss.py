@@ -1,16 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-"""
-@Author  :   Peike Li
-@Contact :   peike.li@yahoo.com
-@File    :   soft_dice_loss.py
-@Time    :   8/13/19 5:09 PM
-@Desc    :   
-@License :   This source code is licensed under the license found in the 
-             LICENSE file in the root directory of this source tree.
-"""
-
 from __future__ import print_function, division
 
 import torch

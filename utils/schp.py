@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
+"""
+@Author  :   Peike Li
+@Contact :   peike.li@yahoo.com
+@File    :   schp.py
+@Time    :   4/8/19 2:11 PM
+@Desc    :   
+@License :   This source code is licensed under the license found in the 
+             LICENSE file in the root directory of this source tree.
+"""
+
 import os
 import torch
 import modules

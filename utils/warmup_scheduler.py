@@ -1,12 +1,25 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
+"""
+@Author  :   Peike Li
+@Contact :   peike.li@yahoo.com
+@File    :   warmup_scheduler.py
+@Time    :   3/28/19 2:24 PM
+@Desc    :   
+@License :   This source code is licensed under the license found in the 
+             LICENSE file in the root directory of this source tree.
+"""
+
 import math
 from torch.optim.lr_scheduler import _LRScheduler
 
 
 class GradualWarmupScheduler(_LRScheduler):
- 
+    """ Gradually warm-up learning rate with cosine annealing in optimizer.
+    Proposed in 'Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour'.
+    """
+
     def __init__(self, optimizer, total_epoch, eta_min=0, warmup_epoch=10, last_epoch=-1):
         self.total_epoch = total_epoch
         self.eta_min = eta_min
@@ -21,7 +34,9 @@ class GradualWarmupScheduler(_LRScheduler):
 
 
 class SGDRScheduler(_LRScheduler):
-
+    """ Consine annealing with warm up and restarts.
+    Proposed in `SGDR: Stochastic Gradient Descent with Warm Restarts`.
+    """
     def __init__(self, optimizer, total_epoch=150, start_cyclical=100, cyclical_base_lr=7e-4, cyclical_epoch=10, eta_min=0, warmup_epoch=10, last_epoch=-1):
         self.total_epoch = total_epoch
         self.start_cyclical = start_cyclical

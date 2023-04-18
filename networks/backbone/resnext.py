@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
+"""
+@Author  :   Peike Li
+@Contact :   peike.li@yahoo.com
+@File    :   resnext.py.py
+@Time    :   8/11/19 8:58 PM
+@Desc    :   
+@License :   This source code is licensed under the license found in the 
+             LICENSE file in the root directory of this source tree.
+"""
 import functools
 import torch.nn as nn
 import math

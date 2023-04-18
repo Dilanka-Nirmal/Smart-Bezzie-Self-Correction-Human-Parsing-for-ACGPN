@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-"""
-@Author  :   Peike Li
-@Contact :   peike.li@yahoo.com
-@File    :   kl_loss.py
-@Time    :   7/23/19 4:02 PM
-@Desc    :   
-@License :   This source code is licensed under the license found in the 
-             LICENSE file in the root directory of this source tree.
-"""
 import torch
 import torch.nn.functional as F
 from torch import nn

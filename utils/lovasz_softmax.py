@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-"""
-@Author  :   Peike Li
-@Contact :   peike.li@yahoo.com
-@File    :   lovasz_softmax.py
-@Time    :   8/30/19 7:12 PM
-@Desc    :   Lovasz-Softmax and Jaccard hinge loss in PyTorch
-             Maxim Berman 2018 ESAT-PSI KU Leuven (MIT License)
-@License :   This source code is licensed under the license found in the
-             LICENSE file in the root directory of this source tree.
-"""
-
 from __future__ import print_function, division
 
 import torch

@@ -1,16 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-"""
-@Author  :   Peike Li
-@Contact :   peike.li@yahoo.com
-@File    :   psp.py
-@Time    :   8/4/19 3:36 PM
-@Desc    :   
-@License :   This source code is licensed under the license found in the 
-             LICENSE file in the root directory of this source tree.
-"""
-
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
@@ -19,10 +9,7 @@ from modules import InPlaceABNSync
 
 
 class PSPModule(nn.Module):
-    """
-    Reference:
-        Zhao, Hengshuang, et al. *"Pyramid scene parsing network."*
-    """
+
     def __init__(self, features, out_features=512, sizes=(1, 2, 3, 6)):
         super(PSPModule, self).__init__()
 

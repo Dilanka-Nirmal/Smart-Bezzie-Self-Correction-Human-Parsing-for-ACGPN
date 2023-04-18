@@ -14,16 +14,7 @@ except ImportError:  # py3k
 
 
 def tversky_loss(probas, labels, alpha=0.5, beta=0.5, epsilon=1e-6):
-    '''
-    Tversky loss function.
-        probas: [P, C] Variable, class probabilities at each prediction (between 0 and 1)
-        labels: [P] Tensor, ground truth labels (between 0 and C - 1)
 
-    Same as soft dice loss when alpha=beta=0.5.
-    Same as Jaccord loss when alpha=beta=1.0.
-    See `Tversky loss function for image segmentation using 3D fully convolutional deep networks`
-    https://arxiv.org/pdf/1706.05721.pdf
-    '''
     C = probas.size(1)
     losses = []
     for c in list(range(C)):
